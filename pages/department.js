@@ -22,14 +22,7 @@ export default function DepartmentPage({ dept }) {
       <h2 style={{ marginTop: "20px" }}>Faculty Members</h2>
 
       {dept.faculty.map((f, index) => (
-        <div key={index}
-             style={{
-               border: "1px solid #ccc",
-               padding: "15px",
-               borderRadius: "8px",
-               marginBottom: "10px",
-               background: "#fff",
-             }}>
+        <div key={index} className="card">
           <p><strong>Name:</strong> {f.name}</p>
           <p><strong>Designation:</strong> {f.designation}</p>
           <p><strong>Email:</strong> {f.email}</p>
